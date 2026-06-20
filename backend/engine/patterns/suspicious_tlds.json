@@ -1,0 +1,30 @@
+{
+  "description": "Top-level domains disproportionately abused for low-cost, disposable phishing infrastructure.",
+  "category": "suspicious_tlds",
+  "keywords": [
+    ".xyz",
+    ".top",
+    ".click",
+    ".tk",
+    ".ml",
+    ".ga",
+    ".cf",
+    ".gq",
+    ".work",
+    ".support",
+    ".loan",
+    ".win",
+    ".bid",
+    ".men",
+    ".date",
+    ".racing",
+    ".accountant",
+    ".download",
+    ".stream",
+    ".icu",
+    ".cam",
+    ".rest",
+    ".live",
+    ".buzz"
+  ]
+}

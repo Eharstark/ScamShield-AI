@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ScamShield AI — Detect Scams Before They Detect You</title>
+  <meta name="description" content="AI-powered scam detection platform. Analyze suspicious SMS messages, phishing URLs, and fraudulent screenshots instantly." />
+
+  <!-- Tabler Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/features.css" />
+  <link rel="stylesheet" href="css/analyzer.css" />
+  <link rel="stylesheet" href="css/results.css" />
+  <link rel="stylesheet" href="css/about.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════ NAVBAR ═══════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo">
+        <div class="logo-icon">
+          <i class="ti ti-shield-check" aria-hidden="true"></i>
+        </div>
+        ScamShield AI
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#features">Features</a>
+        <a href="#analyzer">Analyzer</a>
+        <a href="#about">About</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <i class="ti ti-menu-2" aria-hidden="true"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════ HERO ════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot" aria-hidden="true"></span>
+        AI-Powered Threat Detection — Active
+      </div>
+      <h1>Detect scams before<br />they detect you.</h1>
+      <p>Analyze suspicious messages, URLs, and screenshots before becoming a victim of fraud.</p>
+      <div class="hero-btns">
+        <button class="btn-primary" onclick="document.getElementById('analyzer').scrollIntoView({behavior:'smooth'})">
+          <i class="ti ti-radar" aria-hidden="true"></i> Analyze Now
+        </button>
+        <button class="btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior:'smooth'})">
+          Learn More
+        </button>
+      </div>
+      <div class="stats-row">
+        <div class="stat">
+          <div class="stat-num">2.4M+</div>
+          <div class="stat-label">Scams Detected</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">98.7%</div>
+          <div class="stat-label">Accuracy Rate</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">&lt;2s</div>
+          <div class="stat-label">Analysis Time</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">150+</div>
+          <div class="stat-label">Threat Patterns</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ FEATURES ══════════════════════════════════ -->
+  <section id="features" class="features-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="ti ti-sparkles" aria-hidden="true"></i> Core Capabilities
+        </div>
+        <h2>Three layers of protection</h2>
+        <p class="section-sub">From text messages to screenshots, ScamShield AI analyzes every threat vector used by modern fraudsters.</p>
+      </div>
+      <div class="features-grid">
+
+        <div class="feat-card" tabindex="0">
+          <div class="feat-icon feat-icon--blue">
+            <i class="ti ti-message-2-bolt" aria-hidden="true"></i>
+          </div>
+          <h3>SMS Analyzer</h3>
+          <p>Detect scam indicators in text messages — from urgent OTP requests to fake banking alerts — before you respond.</p>
+          <div class="feat-tags">
+            <span class="tag tag--blue">OTP Scams</span>
+            <span class="tag tag--blue">Banking Alerts</span>
+            <span class="tag tag--blue">Job Fraud</span>
+          </div>
+        </div>
+
+        <div class="feat-card" tabindex="0">
+          <div class="feat-icon feat-icon--green">
+            <i class="ti ti-link" aria-hidden="true"></i>
+          </div>
+          <h3>URL Analyzer</h3>
+          <p>Detect phishing links and malicious domains with deep inspection of URL patterns, domain age, and redirect chains.</p>
+          <div class="feat-tags">
+            <span class="tag tag--green">Phishing</span>
+            <span class="tag tag--green">Malware</span>
+            <span class="tag tag--green">Typosquatting</span>
+          </div>
+        </div>
+
+        <div class="feat-card" tabindex="0">
+          <div class="feat-icon feat-icon--amber">
+            <i class="ti ti-photo-scan" aria-hidden="true"></i>
+          </div>
+          <h3>Screenshot Analyzer</h3>
+          <p>Upload screenshots of suspicious apps, messages, or payment requests and get instant AI-powered fraud detection.</p>
+          <div class="feat-tags">
+            <span class="tag tag--amber">UPI Fraud</span>
+            <span class="tag tag--amber">Fake Apps</span>
+            <span class="tag tag--amber">QR Scams</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════ ANALYZER ══════════════════════════════════ -->
+  <section id="analyzer" class="analyzer-section">
+    <div class="section-inner">
+      <div class="section-header">
+        <div class="section-tag">
+          <i class="ti ti-scan" aria-hidden="true"></i> Analyzer Dashboard
+        </div>
+        <h2>Run a threat analysis</h2>
+        <p class="section-sub">Paste a message, enter a URL, or upload a screenshot to get an instant AI risk report.</p>
+      </div>
+
+      <!-- Tabs -->
+      <div class="tabs" role="tablist" aria-label="Analyzer type">
+        <button class="tab active" role="tab" aria-selected="true" aria-controls="panel-sms" id="tab-sms" onclick="switchTab('sms', this)">
+          <i class="ti ti-message-2" aria-hidden="true"></i> SMS Analysis
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-url" id="tab-url" onclick="switchTab('url', this)">
+          <i class="ti ti-world" aria-hidden="true"></i> URL Analysis
+        </button>
+        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-img" id="tab-img" onclick="switchTab('img', this)">
+          <i class="ti ti-photo" aria-hidden="true"></i> Screenshot Analysis
+        </button>
+      </div>
+
+      <!-- SMS Panel -->
+      <div id="panel-sms" class="tab-panel active" role="tabpanel" aria-labelledby="tab-sms">
+        <textarea
+          id="sms-input"
+          placeholder="Paste suspicious SMS message here..."
+          oninput="updateCounter()"
+          maxlength="2000"
+          aria-label="SMS message to analyze"
+        ></textarea>
+        <div class="char-counter"><span id="char-count">0</span>/2000 characters</div>
+        <button class="analyze-btn" onclick="analyze('sms')">
+          <i class="ti ti-shield-search" aria-hidden="true"></i> Analyze Message
+        </button>
+      </div>
+
+      <!-- URL Panel -->
+      <div id="panel-url" class="tab-panel" role="tabpanel" aria-labelledby="tab-url">
+        <input
+          type="url"
+          id="url-input"
+          placeholder="https://example.com"
+          aria-label="URL to analyze"
+        />
+        <button class="analyze-btn" onclick="analyze('url')">
+          <i class="ti ti-shield-search" aria-hidden="true"></i> Analyze URL
+        </button>
+      </div>
+
+      <!-- Screenshot Panel -->
+      <div id="panel-img" class="tab-panel" role="tabpanel" aria-labelledby="tab-img">
+        <div
+          class="drop-zone"
+          id="drop-zone"
+          onclick="document.getElementById('file-input').click()"
+          ondragover="handleDrag(event, true)"
+          ondragleave="handleDrag(event, false)"
+          ondrop="handleDrop(event)"
+          role="button"
+          tabindex="0"
+          aria-label="Upload screenshot by clicking or dragging"
+          onkeydown="if(event.key==='Enter'||event.key===' ')document.getElementById('file-input').click()"
+        >
+          <div class="drop-icon">
+            <i class="ti ti-cloud-upload" aria-hidden="true"></i>
+          </div>
+          <p>Drag &amp; drop your screenshot here</p>
+          <p class="supported">Supports: PNG, JPG, WEBP</p>
+          <span class="browse-btn">Browse File</span>
+          <input
+            type="file"
+            id="file-input"
+            style="display:none"
+            accept="image/png,image/jpeg,image/webp"
+            onchange="handleFile(event)"
+            aria-label="Upload screenshot file"
+          />
+        </div>
+        <img id="img-preview" alt="Uploaded screenshot preview" />
+        <button
+  type="button"
+  class="analyze-btn"
+  onclick="analyze('img')">
+          <i class="ti ti-shield-search" aria-hidden="true"></i> Analyze Screenshot
+        </button>
+      </div>
+
+      <!-- Results -->
+      <div class="results" id="results-container" aria-live="polite">
+        <div class="result-card">
+          <div class="result-header">
+            <div class="result-header-left">
+              <div class="risk-gauge" aria-label="Risk score gauge">
+                <svg class="gauge-svg" viewBox="0 0 110 110" aria-hidden="true">
+                  <circle class="gauge-bg" cx="55" cy="55" r="44" />
+                  <circle class="gauge-fg" id="gauge-arc" cx="55" cy="55" r="44"
+                    stroke="#EF4444"
+                    stroke-dasharray="276.5"
+                    stroke-dashoffset="276.5"
+                  />
+                </svg>
+                <div class="gauge-text">
+                  <span class="gauge-score" id="score-num">—</span>
+                  <span class="gauge-label">Risk Score</span>
+                </div>
+              </div>
+              <div class="result-meta">
+                <span id="risk-badge" class="risk-badge">Analyzing...</span>
+                <div class="threat-cat" id="threat-cat"></div>
+              </div>
+            </div>
+            <div class="result-header-right">
+              <div class="analysis-label">Analysis completed</div>
+              <div class="analysis-time" id="analysis-time"></div>
+            </div>
+          </div>
+
+          <div class="result-grid">
+            <div class="result-section">
+              <h4>Threat Indicators</h4>
+              <div id="indicators-list"></div>
+            </div>
+            <div class="result-section">
+              <h4>Security Recommendations</h4>
+              <div id="recs-list"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════ ABOUT ═══════════════════════════════════ -->
+  <section id="about" class="about-section">
+    <div class="section-inner">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-tag">
+            <i class="ti ti-info-circle" aria-hidden="true"></i> About
+          </div>
+          <h2>Built to protect real people</h2>
+          <p>ScamShield AI helps users detect scams before they become victims. Powered by advanced threat intelligence and real-time pattern matching, our platform serves individuals, enterprises, and security teams across India and beyond.</p>
+          <div class="about-focuses">
+            <div class="focus-item">
+              <i class="ti ti-shield" style="color:#60A5FA" aria-hidden="true"></i>
+              Cybersecurity Awareness
+            </div>
+            <div class="focus-item">
+              <i class="ti ti-ban" style="color:#EF4444" aria-hidden="true"></i>
+              Scam Prevention
+            </div>
+            <div class="focus-item">
+              <i class="ti ti-radar-2" style="color:#22C55E" aria-hidden="true"></i>
+              Fraud Detection
+            </div>
+            <div class="focus-item">
+              <i class="ti ti-users" style="color:#F59E0B" aria-hidden="true"></i>
+              User Protection
+            </div>
+          </div>
+        </div>
+        <div class="about-visual" aria-hidden="true">
+          <div class="shield-big">
+            <i class="ti ti-shield-check"></i>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Threats blocked today</span>
+            <span class="metric-val" style="color:#22C55E">1,247</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Avg. detection time</span>
+            <span class="metric-val" style="color:#60A5FA">1.8s</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">UPI scams flagged</span>
+            <span class="metric-val" style="color:#F59E0B">389</span>
+          </div>
+          <div class="metric-row">
+            <span class="metric-label">Phishing URLs blocked</span>
+            <span class="metric-val" style="color:#EF4444">621</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════ FOOTER ═══════════════════════════════════ -->
+  <footer>
+    <div class="footer-logo">
+      <i class="ti ti-shield-check" aria-hidden="true"></i>
+      ScamShield AI
+    </div>
+    <div class="footer-sub">© 2025 ScamShield AI · All rights reserved</div>
+    <div class="footer-pills">
+      <span class="pill"><i class="ti ti-lock" aria-hidden="true"></i> Privacy First</span>
+      <span class="pill"><i class="ti ti-shield" aria-hidden="true"></i> Zero Data Stored</span>
+      <span class="pill">Built for Cybersecurity Awareness</span>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/analyzer.js"></script>
+  <script src="js/navbar.js"></script>
+
+</body>
+</html>

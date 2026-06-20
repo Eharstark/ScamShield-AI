@@ -1,0 +1,206 @@
+/* ════════════════════════════════════════════════════════════
+   RESULTS DASHBOARD — risk gauge, badges, indicators, recs
+   ════════════════════════════════════════════════════════════ */
+
+.results {
+  margin-top: 2rem;
+  display: none;
+  animation: fadeIn 0.4s ease;
+}
+
+.result-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.75rem;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.result-header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* Risk gauge */
+.risk-gauge {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  flex-shrink: 0;
+}
+
+.gauge-svg {
+  width: 110px;
+  height: 110px;
+}
+
+.gauge-bg {
+  fill: none;
+  stroke: var(--card);
+  stroke-width: 10;
+}
+
+.gauge-fg {
+  fill: none;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s ease;
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+
+.gauge-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gauge-score {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.gauge-label {
+  font-size: 10px;
+  color: var(--text2);
+}
+
+.result-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+/* Risk badge */
+.risk-badge {
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid;
+  width: fit-content;
+}
+
+.risk-low {
+  color: var(--success);
+  border-color: rgba(34, 197, 94, 0.3);
+  background: rgba(34, 197, 94, 0.1);
+}
+
+.risk-med {
+  color: var(--warning);
+  border-color: rgba(245, 158, 11, 0.3);
+  background: rgba(245, 158, 11, 0.1);
+}
+
+.risk-high {
+  color: var(--danger);
+  border-color: rgba(239, 68, 68, 0.3);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.threat-cat {
+  font-size: 12px;
+  color: var(--text2);
+}
+
+.result-header-right {
+  text-align: right;
+}
+
+.analysis-label {
+  font-size: 12px;
+  color: var(--text2);
+  margin-bottom: 4px;
+}
+
+.analysis-time {
+  font-size: 12px;
+  color: #4ADE80;
+}
+
+/* Result grid */
+.result-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border);
+}
+
+.result-section h4 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text2);
+  margin-bottom: 0.75rem;
+}
+
+/* Threat indicators */
+.indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: var(--text2);
+}
+
+.ind-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.ind-dot.red {
+  background: var(--danger);
+}
+
+.ind-dot.yellow {
+  background: var(--warning);
+}
+
+.ind-dot.green {
+  background: var(--success);
+}
+
+/* Recommendations */
+.rec-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text2);
+  margin-bottom: 0.6rem;
+  line-height: 1.5;
+}
+
+.rec-num {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}

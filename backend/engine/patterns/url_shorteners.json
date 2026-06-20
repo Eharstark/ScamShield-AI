@@ -1,0 +1,25 @@
+{
+  "description": "Known URL-shortening services. Not malicious by themselves, but frequently used to mask a phishing destination.",
+  "category": "url_shorteners",
+  "keywords": [
+    "bit.ly",
+    "tinyurl.com",
+    "t.co",
+    "goo.gl",
+    "ow.ly",
+    "is.gd",
+    "buff.ly",
+    "rebrand.ly",
+    "cutt.ly",
+    "shorte.st",
+    "rb.gy",
+    "tiny.cc",
+    "lnkd.in",
+    "shorturl.at",
+    "v.gd",
+    "soo.gd",
+    "s.id",
+    "tr.im",
+    "clck.ru"
+  ]
+}
