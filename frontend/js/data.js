@@ -16,4 +16,4 @@ const classMap = {
   low: 'risk-low'
 };
 
-const API_BASE_URL = "https://scamshield-ai-p520.onrender.com";
+const API_BASE_URL = "https://scamshield-ai-p52p.onrender.com";
